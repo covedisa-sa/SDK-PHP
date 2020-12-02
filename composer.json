@@ -1,8 +1,10 @@
 {
-    "name": "todopago/php-sdk",
+    "name": "covedisa-sa/php-sdk",
     "description": "SDK para TodoPago",
+    "version": "1.10.15",
     "require": {
-        "php": ">=5.3"
+        "php": ">=5.3",
+        "magento/framework": "*"
     },
     "autoload": {
         "psr-4": {
@@ -12,11 +14,12 @@
     },
     "repositories": [
         {
-             "type": "composer",
-             "url": "https://packagist.org"
+            "type": "composer",
+            "url": "https://repo.magento.com/"
         },
-        { 
-            "packagist": false 
+        {
+            "type": "vcs",
+            "url": "https://github.com/covedisa-sa/SDK-PHP.git"
         }
     ],
     "require-dev": {
